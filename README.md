@@ -8,7 +8,7 @@
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
 *** aking618, LJSGC, AyrenKing1, ayren.king@okstate.edu, Literally Just a Space Game with Cards, What’s better than conquering a solar system? Easy, conquering a galaxy. Better than that? Have complete supremacy over the universe! Build unique decks, upgrade your ship and crew to immense power, defeat even the most worthy of adversaries, conquer entire planets and their civilizations and become the supreme ruler of everything in existence!
-	LJSGC is a procedural single-player deck building game that takes place in the vast expanse of the universe in search of the ultimate prize -- total conquest. You and your crew must travel to different planets in search of resources, better crewmates, equipment and more -- all in the form of playable cards. This game distinguishes itself from other deckbuilding games by changing the setting to the grand universe and supplying a plethora of unique cards that allow the player to fully customize their ship and crew. The game is targeted towards creative PC players that love trial and error tactics.
+	<br>LJSGC is a procedural single-player deck building game that takes place in the vast expanse of the universe in search of the ultimate prize -- total conquest. You and your crew must travel to different planets in search of resources, better crewmates, equipment and more -- all in the form of playable cards. This game distinguishes itself from other deckbuilding games by changing the setting to the grand universe and supplying a plethora of unique cards that allow the player to fully customize their ship and crew. The game is targeted towards creative PC players that love trial and error tactics.
 
 -->
 
@@ -41,9 +41,7 @@
   <h3 align="center">Literally Just a Space Game with Cards</h3>
 
   <p align="center">
-    What’s better than conquering a solar system? Easy, conquering a galaxy. Better than that? Have complete supremacy over the universe! Build unique decks, upgrade your ship and crew to immense power, defeat even the most worthy of adversaries, conquer entire planets and their civilizations and become the supreme ruler of everything in existence!
-	LJSGC is a procedural single-player deck building game that takes place in the vast expanse of the universe in search of the ultimate prize -- total conquest. You and your crew must travel to different planets in search of resources, better crewmates, equipment and more -- all in the form of playable cards. This game distinguishes itself from other deckbuilding games by changing the setting to the grand universe and supplying a plethora of unique cards that allow the player to fully customize their ship and crew. The game is targeted towards creative PC players that love trial and error tactics.
-
+    What’s better than conquering a solar system? Easy, conquering a galaxy. Better than that? Have complete supremacy over the universe! Build unique decks, upgrade your ship and crew to immense power, defeat even the most worthy of adversaries, conquer entire planets and their civilizations and become the supreme ruler of everything in existence!<br>LJSGC is a procedural single-player deck building game that takes place in the vast expanse of the universe in search of the ultimate prize -- total conquest. You and your crew must travel to different planets in search of resources, better crewmates, equipment and more -- all in the form of playable cards. This game distinguishes itself from other deckbuilding games by changing the setting to the grand universe and supplying a plethora of unique cards that allow the player to fully customize their ship and crew. The game is targeted towards creative PC players that love trial and error tactics.
     <br />
     <a href="https://github.com/aking618/LJSGC"><strong>Explore the docs »</strong></a>
     <br />
@@ -90,17 +88,16 @@
 ## About The Project
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`aking618`, `LJSGC`, `AyrenKing1`, `ayren.king@okstate.edu`, `Literally Just a Space Game with Cards`, `What’s better than conquering a solar system? Easy, conquering a galaxy. Better than that? Have complete supremacy over the universe! Build unique decks, upgrade your ship and crew to immense power, defeat even the most worthy of adversaries, conquer entire planets and their civilizations and become the supreme ruler of everything in existence!
+<p align="center">
+What’s better than conquering a solar system? Easy, conquering a galaxy. Better than that? Have complete supremacy over the universe! Build unique decks, upgrade your ship and crew to immense power, defeat even the most worthy of adversaries, conquer entire planets and their civilizations and become the supreme ruler of everything in existence!
 	LJSGC is a procedural single-player deck building game that takes place in the vast expanse of the universe in search of the ultimate prize -- total conquest. You and your crew must travel to different planets in search of resources, better crewmates, equipment and more -- all in the form of playable cards. This game distinguishes itself from other deckbuilding games by changing the setting to the grand universe and supplying a plethora of unique cards that allow the player to fully customize their ship and crew. The game is targeted towards creative PC players that love trial and error tactics.
-`
+	</p>
+
 
 
 ### Built With
 
-* []()
+* [Unity]()
 * []()
 * []()
 
@@ -171,7 +168,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@AyrenKing1](https://twitter.com/AyrenKing1) - ayren.king@okstate.edu
+Ayren King - [@AyrenKing1](https://twitter.com/AyrenKing1) - ayren.king@okstate.edu
+Dillon Williams - [@dillonstwitter]() - dwill@okstate.edu
 
 Project Link: [https://github.com/aking618/LJSGC](https://github.com/aking618/LJSGC)
 
