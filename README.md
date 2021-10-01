@@ -7,7 +7,9 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email, project_title, project_description
+*** aking618, LJSGC, AyrenKing1, ayren.king@okstate.edu, Literally Just a Space Game with Cards, What’s better than conquering a solar system? Easy, conquering a galaxy. Better than that? Have complete supremacy over the universe! Build unique decks, upgrade your ship and crew to immense power, defeat even the most worthy of adversaries, conquer entire planets and their civilizations and become the supreme ruler of everything in existence!
+	LJSGC is a procedural single-player deck building game that takes place in the vast expanse of the universe in search of the ultimate prize -- total conquest. You and your crew must travel to different planets in search of resources, better crewmates, equipment and more -- all in the form of playable cards. This game distinguishes itself from other deckbuilding games by changing the setting to the grand universe and supplying a plethora of unique cards that allow the player to fully customize their ship and crew. The game is targeted towards creative PC players that love trial and error tactics.
+
 -->
 
 
@@ -32,23 +34,25 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo_name">
+  <a href="https://github.com/aking618/LJSGC">
     <img src="images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
-  <h3 align="center">project_title</h3>
+  <h3 align="center">Literally Just a Space Game with Cards</h3>
 
   <p align="center">
-    project_description
+    What’s better than conquering a solar system? Easy, conquering a galaxy. Better than that? Have complete supremacy over the universe! Build unique decks, upgrade your ship and crew to immense power, defeat even the most worthy of adversaries, conquer entire planets and their civilizations and become the supreme ruler of everything in existence!
+	LJSGC is a procedural single-player deck building game that takes place in the vast expanse of the universe in search of the ultimate prize -- total conquest. You and your crew must travel to different planets in search of resources, better crewmates, equipment and more -- all in the form of playable cards. This game distinguishes itself from other deckbuilding games by changing the setting to the grand universe and supplying a plethora of unique cards that allow the player to fully customize their ship and crew. The game is targeted towards creative PC players that love trial and error tactics.
+
     <br />
-    <a href="https://github.com/github_username/repo_name"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/aking618/LJSGC"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/github_username/repo_name">View Demo</a>
+    <a href="https://github.com/aking618/LJSGC">View Demo</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Report Bug</a>
+    <a href="https://github.com/aking618/LJSGC/issues">Report Bug</a>
     ·
-    <a href="https://github.com/github_username/repo_name/issues">Request Feature</a>
+    <a href="https://github.com/aking618/LJSGC/issues">Request Feature</a>
   </p>
 </p>
 
@@ -89,7 +93,9 @@
 
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+`aking618`, `LJSGC`, `AyrenKing1`, `ayren.king@okstate.edu`, `Literally Just a Space Game with Cards`, `What’s better than conquering a solar system? Easy, conquering a galaxy. Better than that? Have complete supremacy over the universe! Build unique decks, upgrade your ship and crew to immense power, defeat even the most worthy of adversaries, conquer entire planets and their civilizations and become the supreme ruler of everything in existence!
+	LJSGC is a procedural single-player deck building game that takes place in the vast expanse of the universe in search of the ultimate prize -- total conquest. You and your crew must travel to different planets in search of resources, better crewmates, equipment and more -- all in the form of playable cards. This game distinguishes itself from other deckbuilding games by changing the setting to the grand universe and supplying a plethora of unique cards that allow the player to fully customize their ship and crew. The game is targeted towards creative PC players that love trial and error tactics.
+`
 
 
 ### Built With
@@ -117,7 +123,7 @@ This is an example of how to list things you need to use the software and how to
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/aking618/LJSGC.git
    ```
 2. Install NPM packages
    ```sh
@@ -138,7 +144,7 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/aking618/LJSGC/issues) for a list of proposed features (and known issues).
 
 
 
@@ -165,9 +171,9 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Your Name - [@AyrenKing1](https://twitter.com/AyrenKing1) - ayren.king@okstate.edu
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
+Project Link: [https://github.com/aking618/LJSGC](https://github.com/aking618/LJSGC)
 
 
 
@@ -184,15 +190,15 @@ Project Link: [https://github.com/github_username/repo_name](https://github.com/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/aking618/repo.svg?style=for-the-badge
+[contributors-url]: https://github.com/aking618/LJSGC/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/aking618/repo.svg?style=for-the-badge
+[forks-url]: https://github.com/aking618/LJSGC/network/members
+[stars-shield]: https://img.shields.io/github/stars/aking618/repo.svg?style=for-the-badge
+[stars-url]: https://github.com/aking618/LJSGC/stargazers
+[issues-shield]: https://img.shields.io/github/issues/aking618/repo.svg?style=for-the-badge
+[issues-url]: https://github.com/aking618/LJSGC/issues
+[license-shield]: https://img.shields.io/github/license/aking618/repo.svg?style=for-the-badge
+[license-url]: https://github.com/aking618/LJSGC/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://linkedin.com/in/aking618
