@@ -168,8 +168,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Ayren King - [@AyrenKing1](https://twitter.com/AyrenKing1) - ayren.king@okstate.edu
-Dillon Williams - [@dillonstwitter]() - dwill@okstate.edu
+Ayren King - [@AyrenKing1](https://twitter.com/AyrenKing1) - ayren.king@ostatemail.okstate.edu
+Dillon Williams - [@itsssdillon](https://twitter.com/itsssdillon) - dwill@ostatemail.okstate.edu
 
 Project Link: [https://github.com/aking618/LJSGC](https://github.com/aking618/LJSGC)
 
