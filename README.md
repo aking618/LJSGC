@@ -35,7 +35,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/aking618/LJSGC">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="Literally just a space game with cards (1).gif" alt="Logo" >
   </a>
 
   <h3 align="center">Literally Just a Space Game with Cards</h3>
