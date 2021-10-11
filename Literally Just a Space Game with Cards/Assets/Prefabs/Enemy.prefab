@@ -44,11 +44,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: baa8795d875688d48817d7544706f572, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  unitName: Enemy
+  unitType: 1
+  unitName: Circle
   unitLevel: 2
   damage: 8
   maxHP: 30
-  currentHP: 26
+  currentHP: 30
+  maxEnergy: 0
+  currentEnergy: 0
 --- !u!1 &2595839642854027948
 GameObject:
   m_ObjectHideFlags: 0

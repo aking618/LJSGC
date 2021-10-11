@@ -63,6 +63,18 @@ public class BattleSystem : MonoBehaviour
     {
         Debug.Log("Player Attacking");
 
+        // check if player has enough energy to attack
+        if (playerUnit.currentEnergy < playerUnit.attackCost)
+        {
+            dialogueText.text = "Not enough energy!";
+            yield return new WaitForSeconds(2f);
+            dialogueText.text = "Choose an action:";
+            yield break;
+        }
+
+        playerUnit.UseEnergy(playerUnit.attackCost);
+        playerHUD.UpdateEnergy(playerUnit);
+
         bool isDead = enemyUnit.TakeDamage(playerUnit.damage);
 
         enemyHUD.SetHP(enemyUnit.currentHP);
@@ -138,6 +150,10 @@ public class BattleSystem : MonoBehaviour
             return;
 
         state = BattleState.ENEMYTURN;
+
+        playerUnit.ResetEnergy();
+        playerHUD.UpdateEnergy(playerUnit);
+
         StartCoroutine(EnemyTurn());
     }
 
