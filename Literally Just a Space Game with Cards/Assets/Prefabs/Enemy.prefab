@@ -52,6 +52,7 @@ MonoBehaviour:
   currentHP: 30
   maxEnergy: 0
   currentEnergy: 0
+  attackCost: 0
 --- !u!1 &2595839642854027948
 GameObject:
   m_ObjectHideFlags: 0
