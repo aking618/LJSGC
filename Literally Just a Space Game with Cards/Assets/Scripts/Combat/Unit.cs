@@ -23,6 +23,7 @@ public class Unit : MonoBehaviour
     public int maxEnergy;
     public int currentEnergy;
     public int attackCost;
+    public int defense;
 
     public bool TakeDamage(int damage)
     {
