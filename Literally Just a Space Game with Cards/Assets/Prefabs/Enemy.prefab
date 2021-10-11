@@ -46,9 +46,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitName: Enemy
   unitLevel: 2
-  damage: 3
+  damage: 8
   maxHP: 30
-  currentHP: 30
+  currentHP: 26
 --- !u!1 &2595839642854027948
 GameObject:
   m_ObjectHideFlags: 0

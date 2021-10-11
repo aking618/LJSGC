@@ -13,4 +13,14 @@ public class Unit : MonoBehaviour
     public int maxHP;
     public int currentHP;
 
+    public int maxEnergy;
+    public int currentEnergy;
+
+    public bool TakeDamage(int damage)
+    {
+        currentHP -= damage;
+
+        return currentHP <= 0 ? true : false;
+    }
+
 }
