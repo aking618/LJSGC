@@ -98,9 +98,6 @@ public class BattleSystem : MonoBehaviour
 
         yield return new WaitForSeconds(1f);
 
-        // TODO: function for isDead
-        // TODO: split switch into multiple functions
-
         switch (enemyUnit.enemyAI)
         {
             case EnemyAI.NONE:
@@ -172,7 +169,7 @@ public class BattleSystem : MonoBehaviour
 
     void PerformMediumAI()
     {
-        bool buffActive = false;
+        bool buffActive = true;
         if (!buffActive)
         {
             StartCoroutine(EnemyBuff());
@@ -200,8 +197,8 @@ public class BattleSystem : MonoBehaviour
 
     void PerformHighAI()
     {
-        bool buffActive = false;
-        bool debuffActive = false;
+        bool buffActive = true;
+        bool debuffActive = true;
         if (!buffActive)
         {
             StartCoroutine(EnemyBuff());

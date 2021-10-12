@@ -20,19 +20,29 @@ public enum EnemyAI
 public class Unit : MonoBehaviour
 {
 
+    [Header("Unit Type")]
     public UnitType unitType;
     public EnemyAI enemyAI;
+
+    [Header("Unit Descriptive Properties")]
     public string unitName;
     public int unitLevel;
 
+    [Header("Unit Stats")]
     public int damage;
 
+    [Space(10)]
     public int maxHP;
     public int currentHP;
 
+    [Space(10)]
     public int maxEnergy;
     public int currentEnergy;
+
+    [Space(10)]
     public int attackCost;
+
+    [Space(10)]
     public int defense;
     public bool isDefending;
 
