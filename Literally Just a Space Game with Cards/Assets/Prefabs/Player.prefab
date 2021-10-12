@@ -127,11 +127,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitType: 0
+  enemyAI: 0
   unitName: Nebulus
   unitLevel: 5
   damage: 6
-  maxHP: 69
-  currentHP: 69
+  maxHP: 30
+  currentHP: 30
   maxEnergy: 5
   currentEnergy: 5
   attackCost: 2
+  defense: 3
+  isDefending: 0

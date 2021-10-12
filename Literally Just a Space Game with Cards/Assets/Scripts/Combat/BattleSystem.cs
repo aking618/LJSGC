@@ -94,28 +94,26 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyTurn()
     {
         Debug.Log("Enemy Turn");
-        dialogueText.text = enemyUnit.unitName + " attacks!";
+        dialogueText.text = enemyUnit.unitName + " turn!";
 
         yield return new WaitForSeconds(1f);
 
-        // do enemy stuff
-        bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
-
-        playerHUD.SetHP(playerUnit.currentHP);
-
-        yield return new WaitForSeconds(2f);
-
-        if (isDead)
+        switch (enemyUnit.enemyAI)
         {
-            state = BattleState.LOST;
-            EndBattle();
+            case EnemyAI.NONE:
+            case EnemyAI.LOW:
+                PerformLowAI();
+                break;
+            case EnemyAI.MEDIUM:
+                PerformMediumAI();
+                break;
+            case EnemyAI.HIGH:
+                PerformHighAI();
+                break;
+            case EnemyAI.BOSS:
+                // implmenet custom AI in enemy class
+                break;
         }
-        else
-        {
-            state = BattleState.PLAYERTURN;
-            PlayerTurn();
-        }
-
     }
 
     void EndBattle()
@@ -158,4 +156,136 @@ public class BattleSystem : MonoBehaviour
     }
 
 
+    void PerformLowAI()
+    {
+        if (enemyUnit.BelowQuarterHP())
+        {
+            StartCoroutine(EnemyHeal());
+            return;
+        }
+
+        StartCoroutine(EnemyAttack());
+    }
+
+    void PerformMediumAI()
+    {
+        bool buffActive = true;
+        if (!buffActive)
+        {
+            StartCoroutine(EnemyBuff());
+            buffActive = true;
+            return;
+        }
+        else if (enemyUnit.BelowQuarterHP())
+        {
+            StartCoroutine(EnemyHeal());
+            return;
+        }
+
+        int choice = Random.Range(0, 3);
+        if (choice < 3)
+        {
+            StartCoroutine(EnemyAttack());
+            return;
+        }
+        else
+        {
+            StartCoroutine(EnemyDefend());
+            return;
+        }
+    }
+
+    void PerformHighAI()
+    {
+        bool buffActive = true;
+        bool debuffActive = true;
+        if (!buffActive)
+        {
+            StartCoroutine(EnemyBuff());
+            buffActive = true;
+            return;
+        }
+        else if (!debuffActive)
+        {
+            StartCoroutine(EnemyDebuff());
+            debuffActive = true;
+            return;
+        }
+
+        PerformMediumAI();
+    }
+
+    IEnumerator EnemyHeal()
+    {
+        Debug.Log("Enemy Heal");
+        dialogueText.text = enemyUnit.unitName + " heals!";
+        yield return new WaitForSeconds(1f);
+
+        enemyUnit.Heal(enemyUnit.defense);
+        enemyHUD.SetHP(enemyUnit.currentHP);
+
+        yield return new WaitForSeconds(2f);
+
+        state = BattleState.PLAYERTURN;
+        PlayerTurn();
+    }
+
+    IEnumerator EnemyAttack()
+    {
+        Debug.Log("Enemy Attack");
+        dialogueText.text = enemyUnit.unitName + " attacks!";
+        yield return new WaitForSeconds(1f);
+
+        // perform attack logic
+        bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
+
+        playerHUD.SetHP(playerUnit.currentHP);
+
+        yield return new WaitForSeconds(2f);
+
+        if (isDead)
+        {
+            state = BattleState.LOST;
+            EndBattle();
+        }
+        else
+        {
+            state = BattleState.PLAYERTURN;
+            PlayerTurn();
+        }
+    }
+
+    IEnumerator EnemyDefend()
+    {
+        Debug.Log("Enemy Defend");
+        dialogueText.text = enemyUnit.unitName + " defends!";
+        yield return new WaitForSeconds(1f);
+
+        // perform defend logic
+        enemyUnit.Defend();
+
+        PlayerTurn();
+    }
+
+    IEnumerator EnemyBuff()
+    {
+        Debug.Log("Enemy Buff");
+        dialogueText.text = enemyUnit.unitName + " buffs!";
+        yield return new WaitForSeconds(1f);
+
+        // perform buff logic
+
+        PlayerTurn();
+    }
+
+    IEnumerator EnemyDebuff()
+    {
+        Debug.Log("Enemy Debuff");
+        dialogueText.text = enemyUnit.unitName + " debuffs!";
+        yield return new WaitForSeconds(1f);
+
+        // perform debuff logic
+
+        PlayerTurn();
+    }
 }
