@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   unitType: 1
+  enemyAI: 1
   unitName: Circle
   unitLevel: 2
   damage: 8
@@ -53,6 +54,8 @@ MonoBehaviour:
   maxEnergy: 0
   currentEnergy: 0
   attackCost: 0
+  defense: 4
+  isDefending: 0
 --- !u!1 &2595839642854027948
 GameObject:
   m_ObjectHideFlags: 0
