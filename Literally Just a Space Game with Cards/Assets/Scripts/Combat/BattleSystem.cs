@@ -31,6 +31,8 @@ public class BattleSystem : MonoBehaviour
 
     public BattleState state;
 
+    private float textWaitTime = 0.6f;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -53,7 +55,7 @@ public class BattleSystem : MonoBehaviour
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(textWaitTime);
 
         state = BattleState.PLAYERTURN;
         PlayerTurn();
@@ -67,7 +69,7 @@ public class BattleSystem : MonoBehaviour
         if (playerUnit.currentEnergy < playerUnit.attackCost)
         {
             dialogueText.text = "Not enough energy!";
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(textWaitTime);
             dialogueText.text = "Choose an action:";
             yield break;
         }
@@ -80,7 +82,7 @@ public class BattleSystem : MonoBehaviour
         enemyHUD.SetHP(enemyUnit.currentHP);
         dialogueText.text = "The attack is successful!";
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(textWaitTime);
 
         if (isDead)
         {
@@ -96,7 +98,7 @@ public class BattleSystem : MonoBehaviour
         Debug.Log("Enemy Turn");
         dialogueText.text = enemyUnit.unitName + " turn!";
 
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(textWaitTime);
 
         switch (enemyUnit.enemyAI)
         {
@@ -219,12 +221,12 @@ public class BattleSystem : MonoBehaviour
     {
         Debug.Log("Enemy Heal");
         dialogueText.text = enemyUnit.unitName + " heals!";
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(textWaitTime);
 
         enemyUnit.Heal(enemyUnit.defense);
         enemyHUD.SetHP(enemyUnit.currentHP);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(textWaitTime);
 
         state = BattleState.PLAYERTURN;
         PlayerTurn();
@@ -234,14 +236,14 @@ public class BattleSystem : MonoBehaviour
     {
         Debug.Log("Enemy Attack");
         dialogueText.text = enemyUnit.unitName + " attacks!";
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(textWaitTime);
 
         // perform attack logic
         bool isDead = playerUnit.TakeDamage(enemyUnit.damage);
 
         playerHUD.SetHP(playerUnit.currentHP);
 
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(textWaitTime);
 
         if (isDead)
         {
@@ -259,7 +261,7 @@ public class BattleSystem : MonoBehaviour
     {
         Debug.Log("Enemy Defend");
         dialogueText.text = enemyUnit.unitName + " defends!";
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(textWaitTime);
 
         // perform defend logic
         enemyUnit.Defend();
@@ -271,7 +273,7 @@ public class BattleSystem : MonoBehaviour
     {
         Debug.Log("Enemy Buff");
         dialogueText.text = enemyUnit.unitName + " buffs!";
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(textWaitTime);
 
         // perform buff logic
 
@@ -282,7 +284,7 @@ public class BattleSystem : MonoBehaviour
     {
         Debug.Log("Enemy Debuff");
         dialogueText.text = enemyUnit.unitName + " debuffs!";
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(textWaitTime);
 
         // perform debuff logic
 
