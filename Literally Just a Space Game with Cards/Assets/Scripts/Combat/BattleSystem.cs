@@ -170,7 +170,7 @@ public class BattleSystem : MonoBehaviour
         Debug.Log("Player Defending");
 
         dialogueText.text = "You are defending!";
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(textWaitTime);
 
         // perform defend action
         playerUnit.Defend();
