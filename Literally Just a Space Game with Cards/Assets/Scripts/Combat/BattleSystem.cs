@@ -142,6 +142,14 @@ public class BattleSystem : MonoBehaviour
         StartCoroutine(PlayerAttack());
     }
 
+    public void OnDefendButton()
+    {
+        if (state != BattleState.PLAYERTURN)
+            return;
+
+        StartCoroutine(PlayerDefend());
+    }
+
     public void OnEndTurnButton()
     {
         if (state != BattleState.PLAYERTURN)
@@ -151,6 +159,21 @@ public class BattleSystem : MonoBehaviour
 
         playerUnit.ResetEnergy();
         playerHUD.UpdateEnergy(playerUnit);
+
+        StartCoroutine(EnemyTurn());
+    }
+
+    IEnumerator PlayerDefend()
+    {
+        Debug.Log("Player Defending");
+
+        dialogueText.text = "You are defending!";
+        yield return new WaitForSeconds(2f);
+
+        // perform defend action
+        playerUnit.Defend();
+
+        state = BattleState.ENEMYTURN;
 
         StartCoroutine(EnemyTurn());
     }
