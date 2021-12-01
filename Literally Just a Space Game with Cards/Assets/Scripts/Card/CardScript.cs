@@ -8,7 +8,6 @@ public class CardScript : MonoBehaviour
     public string cardName;
     public string cardDescription;
     public int cardCost;
-    public GameObject cardImage;
     public CardType cardType;
     public CardTarget cardTarget;
 
