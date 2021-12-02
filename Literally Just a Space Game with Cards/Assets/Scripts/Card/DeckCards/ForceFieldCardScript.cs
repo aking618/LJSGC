@@ -11,9 +11,15 @@ public class ForceFieldCardScript : CardScript
     public override void OnCardPlayed()
     {
         Unit playerUnit = GameObject.Find("Player(Clone)").GetComponent<Unit>();
+        
+        if(playerUnit.currentEnergy < 1) return;
+
         playerUnit.Defend();
-        playerUnit.currentEnergy -= 1;
+        playerUnit.UseEnergy(1);
+
+        GameObject.Find("PlayerBattleHUD").GetComponent<BattleHUD>().SetHP(playerUnit.currentHP);
         GameObject.Find("PlayerBattleHUD").GetComponent<BattleHUD>().SetHUD(playerUnit); 
+        
         Debug.Log("ForceFieldScript.OnPlay()");
     }
 }
