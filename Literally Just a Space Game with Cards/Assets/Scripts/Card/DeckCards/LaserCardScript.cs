@@ -10,6 +10,7 @@ public class LaserCardScript : CardScript
     }
     public override void OnCardPlayed()
     {
+
         Unit enemyUnit = GameObject.Find("Enemy(Clone)").GetComponent<Unit>();
         Unit playerUnit = GameObject.Find("Player(Clone)").GetComponent<Unit>();
         BattleSystem battleSystem = GameObject.Find("Battle System").GetComponent<BattleSystem>();
@@ -24,6 +25,8 @@ public class LaserCardScript : CardScript
             StartCoroutine(UpdateUI("Not enough energy!"));
             return;
         }
+
+        PlayAudio();
 
         playerUnit.UseEnergy(2);
 

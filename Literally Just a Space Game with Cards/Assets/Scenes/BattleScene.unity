@@ -2521,8 +2521,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f213d0b0cf2ceb34bb1c62d50060f121, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 2486693161602929734, guid: f9c6fb6cc5bf210448683c62fc8f2d34, type: 3}
-  enemyPrefab: {fileID: 2595839641418905512, guid: 3e6808ba9401c224e828e698f5e43cbf, type: 3}
+  playerPrefab: {fileID: 6656868599315393531, guid: f9c6fb6cc5bf210448683c62fc8f2d34, type: 3}
+  enemyPrefabs:
+  - {fileID: 3720838098167364703, guid: 3e6808ba9401c224e828e698f5e43cbf, type: 3}
+  - {fileID: 2473439877506502201, guid: 973d62a4e2131a94faf4c30a219bfd3f, type: 3}
+  - {fileID: 7684652165258231928, guid: dc47779a48d41a341af46ca1e5faa3a6, type: 3}
+  - {fileID: 181710313796696819, guid: 57cad710688ee8c439a5bef5629b5a11, type: 3}
   playerBattleStation: {fileID: 482016810}
   enemyBattleStation: {fileID: 426385073}
   dialogueText: {fileID: 1649994408}
@@ -2831,8 +2835,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18

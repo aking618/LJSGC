@@ -10,6 +10,7 @@ public class ForceFieldCardScript : CardScript
     }
     public override void OnCardPlayed()
     {
+
         Unit playerUnit = GameObject.Find("Player(Clone)").GetComponent<Unit>();
 
         if (!IsPlayerTurn(GameObject.Find("Battle System").GetComponent<BattleSystem>().state))
@@ -28,6 +29,8 @@ public class ForceFieldCardScript : CardScript
             StartCoroutine(UpdateUI("Not enough energy!"));
             return;
         }
+
+        PlayAudio();
 
         playerUnit.Defend();
         playerUnit.UseEnergy(1);

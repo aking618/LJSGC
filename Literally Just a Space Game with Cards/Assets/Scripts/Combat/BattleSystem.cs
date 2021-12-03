@@ -16,7 +16,7 @@ public enum BattleState
 public class BattleSystem : MonoBehaviour
 {
     public GameObject playerPrefab;
-    public GameObject enemyPrefab;
+    public GameObject[] enemyPrefabs;
 
     public Transform playerBattleStation;
     public Transform enemyBattleStation;
@@ -47,10 +47,14 @@ public class BattleSystem : MonoBehaviour
         GameObject playerGO = Instantiate(playerPrefab, playerBattleStation);
         playerUnit = playerGO.GetComponent<Unit>();
 
+        GameObject enemyPrefab = enemyPrefabs[Random.Range(0, enemyPrefabs.Length)];
+
+        // change name of enemyPrefab to Enemy
+        enemyPrefab.name = "Enemy";
         GameObject enemyGO = Instantiate(enemyPrefab, enemyBattleStation);
         enemyUnit = enemyGO.GetComponent<Unit>();
 
-        dialogueText.text = "A wild " + enemyUnit.unitName + " appeared!";
+        dialogueText.text = enemyUnit.unitName + " appeared!";
 
         playerHUD.SetHUD(playerUnit);
         enemyHUD.SetHUD(enemyUnit);
@@ -96,7 +100,7 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyTurn()
     {
         Debug.Log("Enemy Turn");
-        dialogueText.text = enemyUnit.unitName + " turn!";
+        dialogueText.text = enemyUnit.unitName + "'s turn!";
 
         yield return new WaitForSeconds(textWaitTime);
 
@@ -258,7 +262,7 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyAttack()
     {
         Debug.Log("Enemy Attack");
-        dialogueText.text = enemyUnit.unitName + " attacks!";
+        dialogueText.text = enemyUnit.unitName + " launches an attack!";
         yield return new WaitForSeconds(textWaitTime);
 
         // perform attack logic
@@ -283,7 +287,7 @@ public class BattleSystem : MonoBehaviour
     IEnumerator EnemyDefend()
     {
         Debug.Log("Enemy Defend");
-        dialogueText.text = enemyUnit.unitName + " defends!";
+        dialogueText.text = enemyUnit.unitName + " plays FORCEFIELD!";
         yield return new WaitForSeconds(textWaitTime);
 
         // perform defend logic

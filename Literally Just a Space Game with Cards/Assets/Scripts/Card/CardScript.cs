@@ -18,6 +18,11 @@ public class CardScript : MonoBehaviour
         Debug.Log("Card Played");
     }
 
+    public void PlayAudio()
+    {
+        GetComponent<AudioSource>().Play();
+    }
+
     public IEnumerator UpdateUI(string text)
     {
         Debug.Log("Updating UI");
