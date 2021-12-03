@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/BattleScene.unity
     guid: a6d52462913b8eb41a157b71effb449f
+  - enabled: 1
+    path: Assets/Scenes/WorldTraversal.unity
+    guid: dfee04e845f88ff40827b6f3784112a5
   m_configObjects: {}

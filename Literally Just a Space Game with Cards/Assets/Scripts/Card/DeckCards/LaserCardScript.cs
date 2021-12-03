@@ -14,15 +14,30 @@ public class LaserCardScript : CardScript
         Unit playerUnit = GameObject.Find("Player(Clone)").GetComponent<Unit>();
         BattleSystem battleSystem = GameObject.Find("Battle System").GetComponent<BattleSystem>();
 
-        if(playerUnit.currentEnergy < 2) return;
-        
+        if (!IsPlayerTurn(battleSystem.state))
+        {
+            return;
+        }
+
+        if (playerUnit.currentEnergy < 2)
+        {
+            StartCoroutine(UpdateUI("Not enough energy!"));
+            return;
+        }
+
         playerUnit.UseEnergy(2);
-        enemyUnit.TakeDamage(6);
+
+        if (enemyUnit.TakeDamage(6))
+        {
+            StartCoroutine(HandleWin());
+        }
+
+        StartCoroutine(UpdateUI("Direct Hit for 6 damage!"));
 
         GameObject.Find("PlayerBattleHUD").GetComponent<BattleHUD>().SetHP(playerUnit.currentHP);
 
-        GameObject.Find("PlayerBattleHUD").GetComponent<BattleHUD>().SetHUD(playerUnit); 
-        GameObject.Find("EnemyBattleHUD").GetComponent<BattleHUD>().SetHUD(enemyUnit); 
+        GameObject.Find("PlayerBattleHUD").GetComponent<BattleHUD>().SetHUD(playerUnit);
+        GameObject.Find("EnemyBattleHUD").GetComponent<BattleHUD>().SetHUD(enemyUnit);
 
         Debug.Log("LaserCardScript.OnPlay()");
     }

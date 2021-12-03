@@ -2284,7 +2284,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1490857362}
-  - component: {fileID: 1490857360}
   - component: {fileID: 1490857364}
   - component: {fileID: 1490857363}
   - component: {fileID: 1490857361}
@@ -2295,26 +2294,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1490857360
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1490857359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f213d0b0cf2ceb34bb1c62d50060f121, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 2486693161602929734, guid: f9c6fb6cc5bf210448683c62fc8f2d34, type: 3}
-  enemyPrefab: {fileID: 2595839641418905512, guid: 3e6808ba9401c224e828e698f5e43cbf, type: 3}
-  playerBattleStation: {fileID: 482016810}
-  enemyBattleStation: {fileID: 426385073}
-  dialogueText: {fileID: 1649994408}
-  playerHUD: {fileID: 254512668}
-  enemyHUD: {fileID: 2013654573}
-  state: 0
 --- !u!114 &1490857361
 MonoBehaviour:
   m_ObjectHideFlags: 0
