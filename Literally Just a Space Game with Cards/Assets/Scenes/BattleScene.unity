@@ -1946,13 +1946,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c924a6de9f38cf74aa72a126e89d32de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hand:
-  - {fileID: 2949636245692765291, guid: c1ba32ffb2282e843b49dc1067465275, type: 3}
-  - {fileID: 7220520226163648537, guid: cfdbc96345eb3d54f87c50d9402d8cbf, type: 3}
-  - {fileID: 2949636245692765291, guid: c1ba32ffb2282e843b49dc1067465275, type: 3}
-  - {fileID: 7220520226163648537, guid: cfdbc96345eb3d54f87c50d9402d8cbf, type: 3}
-  - {fileID: 2949636245692765291, guid: c1ba32ffb2282e843b49dc1067465275, type: 3}
-  - {fileID: 7220520226163648537, guid: cfdbc96345eb3d54f87c50d9402d8cbf, type: 3}
+  hand: []
   cardSlots:
   - {fileID: 575668232}
   - {fileID: 1137296061}
@@ -1960,6 +1954,18 @@ MonoBehaviour:
   - {fileID: 713613506}
   - {fileID: 474316546}
   - {fileID: 823493940}
+  Deck:
+  - {fileID: 2949636245692765291, guid: c1ba32ffb2282e843b49dc1067465275, type: 3}
+  - {fileID: 7220520226163648537, guid: cfdbc96345eb3d54f87c50d9402d8cbf, type: 3}
+  - {fileID: 7220520226163648537, guid: cfdbc96345eb3d54f87c50d9402d8cbf, type: 3}
+  - {fileID: 7220520226163648537, guid: cfdbc96345eb3d54f87c50d9402d8cbf, type: 3}
+  - {fileID: 2949636245692765291, guid: c1ba32ffb2282e843b49dc1067465275, type: 3}
+  - {fileID: 2949636245692765291, guid: c1ba32ffb2282e843b49dc1067465275, type: 3}
+  - {fileID: 2949636245692765291, guid: c1ba32ffb2282e843b49dc1067465275, type: 3}
+  - {fileID: 7220520226163648537, guid: cfdbc96345eb3d54f87c50d9402d8cbf, type: 3}
+  - {fileID: 7220520226163648537, guid: cfdbc96345eb3d54f87c50d9402d8cbf, type: 3}
+  - {fileID: 2949636245692765291, guid: c1ba32ffb2282e843b49dc1067465275, type: 3}
+  - {fileID: 7220520226163648537, guid: cfdbc96345eb3d54f87c50d9402d8cbf, type: 3}
 --- !u!1 &1065548702
 GameObject:
   m_ObjectHideFlags: 0
